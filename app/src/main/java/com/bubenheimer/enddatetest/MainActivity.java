@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         Calendar cal = Calendar.getInstance();
         cal.add(Calendar.DAY_OF_MONTH, 1);
         long cur = cal.getTimeInMillis();
-        DatePicker datePicker = (DatePicker) findViewById(R.id.datePicker);
+        DatePicker datePicker = findViewById(R.id.datePicker);
         //Next line triggers exception
         datePicker.setMinDate(cur);
         int year = cal.get(Calendar.YEAR);
